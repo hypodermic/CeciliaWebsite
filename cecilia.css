@@ -1,0 +1,190 @@
+body{
+/*    background: url("https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?auto=format&fit=crop&w=1387&q=80"); */
+/*   color: white; */
+}
+
+* {
+    box-sizing: border-box;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    width: 100%;
+    float: left;
+    padding: 15px;
+/*     border: 1px solid red; */
+}
+@media only screen and (min-width: 850px) {
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+}
+
+/* navbar starts */
+.navbar {
+  z-index:2;
+  background:white;
+    margin: 0px 0px;
+    padding: 8px 0px;
+  position: fixed;
+    top: 0;
+    width: 100%;
+}
+.navicon {
+  display: inline;
+  font-size:150%;
+  padding-right:10px;
+  color: black;
+}
+.homeicon {
+  padding-right:30px;
+}
+.language {
+  float: right;
+  padding-right:15px;
+}
+/* navbar ends */
+
+/* home page styling starts ONLY FOR SCREENS ABOVE 850px*/
+/* #home{
+   width: 100vw;
+  height: 100vh;
+} */
+.home{
+  height:755px;
+  padding:50px 0px 0px 0px;
+}
+.home a {
+  font-family:Permanent Marker;
+  text-decoration:none;
+  color:black;
+}
+/* .test{
+  margin-left:auto;
+  margin-right:auto;
+} */
+.name{
+  font-size: 9vw;
+  text-align:center;
+  
+}
+
+.buttons {
+/* display: inline;  */
+/*   margin-top:-30px; */
+  float:right;
+  font-size: 3vw;
+  padding-right:33.5%;
+}
+/* have name change colors */
+.name:hover {
+  color:purple;
+  opacity:.5;
+}
+.link:hover {
+  opacity:.5;
+}
+/* home page styling ends */
+
+/* about page styling begins */
+.about {
+  height:auto; /*!!!!!!!*/
+  padding:50px 0px; /*!!!!!!!*/
+  background:black;
+}
+.image1 {
+  display: block;
+  max-width: 60%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+/*   margin-top:50px; */
+}
+.text{
+  width:80%;
+  margin-left:auto;
+  margin-right: auto;
+/*   margin-top:120px; */
+/*   padding:20px; */
+  font-family:Josefin Sans;
+  font-size:17px;
+  color:grey;
+}
+p:first-letter {
+ font-size: 4em;
+ }
+/* about page styling ends */
+
+/* linguistics page styling begins */
+#linguistics .text {
+   color:black;
+}
+.linguistics {
+  height:auto; /*!!!!!!!*/
+  padding:50px 0px; /*!!!!!!!*/
+  background:url("https://farm5.staticflickr.com/4779/40657383641_ef2b503f0c_z.jpg") no-repeat;
+  background-size:cover;
+}
+/* linguistics page styling ends */
+
+/* aquaponics page styling begins */
+.aquaponics {
+  height:auto; /*!!!!!!!*/
+  padding:50px 0px; /*!!!!!!!*/
+  background:black;
+}
+/* aquaponics page styling ends */
+
+/* coding page styling begins */
+.coding {
+  height:auto; /*!!!!!!!*/
+  padding:50px 0px; /*!!!!!!!*/
+  background:white;
+}
+.titlehover {
+  position: relative;
+  text-align: center; 
+}
+.image2 {
+  max-width: 100%;
+  border-radius:10px;
+}
+.title {
+   background:black;
+   opacity:0;
+   position: absolute;
+   width:100%;
+   height:100%;
+   top:50%;
+   left:50%;
+   transform: translate(-50%, -50%);
+   border-radius:10px;
+}
+.inner{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+font-family:Permanent Marker;
+  color:white;
+}
+.title:hover {
+  opacity:.9;
+}
+#comingsoon {
+  opacity:.9;
+}
+/* coding page styling ends */
